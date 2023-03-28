@@ -6,12 +6,9 @@ pipeline {
 
   }
   stages {
-    stage('Control XML Files') {
+    stage('') {
       steps {
-        fileExists 'testng.xml'
-        fileExists 'pom.xml'
-        writeFile(file: 'testSteps.java', text: '/* im writing something in this workspace */')
-        cleanWs(cleanWhenAborted: true, skipWhenFailed: true)
+        deleteDir()
       }
     }
 
