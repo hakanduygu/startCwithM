@@ -10,6 +10,7 @@ pipeline {
       steps {
         fileExists 'testng.xml'
         fileExists 'pom.xml'
+        writeFile(file: 'steps', text: '/* im writing something in this workspace */')
       }
     }
 
