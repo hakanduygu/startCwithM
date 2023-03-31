@@ -5,7 +5,6 @@ import io.cucumber.testng.CucumberOptions;
 
 
 
-
 @CucumberOptions(
         plugin = {
                 "com.cucumber.listener.ExtentCucumberFormatter:target/ExtentReport/ExtentReportRegression.html"
